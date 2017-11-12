@@ -1,0 +1,10 @@
+version: '2'
+services:
+  jre:
+    build:
+        context: .
+        args:
+            - http_proxy
+            - https_proxy
+            - no_proxy
+    image: friedrichj/java8
